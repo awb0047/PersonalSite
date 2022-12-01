@@ -14,6 +14,7 @@ export const NavContainer = styled.div`
     display: flex;
     justify-content: center;
     position: fixed;
+    z-index: 5;
 `
 
 export const InnerNav = styled.div`
@@ -29,7 +30,7 @@ export const InnerNav = styled.div`
 `
 
 export const Logo = styled.img`
-    height: 150%;
+    height: 80%;
     margin-right: auto;
     margin-left: 30px;
 `

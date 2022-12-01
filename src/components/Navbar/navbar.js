@@ -16,7 +16,7 @@ export function NavBar( {
     return (
         <NavContainer>
             <InnerNav>
-                <Logo src={"https://static.cdn.wisestamp.com/wp-content/uploads/2020/08/Michael-Jordan-personal-autograph.png"}/>
+                <Logo src={"signature.png"}/>
                 <LinksContainer>
                     <NavLink href="/#home">HOME</NavLink>
                     <NavLink href="/#faq">FAQ</NavLink>

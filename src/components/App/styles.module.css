@@ -6,3 +6,8 @@
     font-family: imported;
     src: url(../../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }
+
+@font-face {
+    font-family: font2;
+    src: url(../../assets/fonts/LeagueSpartan-VariableFont_wght.ttf);
+}

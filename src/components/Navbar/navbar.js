@@ -18,7 +18,7 @@ export function NavBar( {
             <InnerNav>
                 <Logo src={"signature.png"}/>
                 <LinksContainer>
-                    <NavLink href="/#home">HOME</NavLink>
+                    <NavLink href="#home">HOME</NavLink>
                     <NavLink href="/#faq">FAQ</NavLink>
                     <NavLink href="/#">ABOUT</NavLink>
                     <NavLink href="/#">CONTACT</NavLink>

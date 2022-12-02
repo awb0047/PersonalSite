@@ -11,11 +11,11 @@ export function Hero( {
     }
 
     return (
-        <HeroContainer>
+        <HeroContainer id="home">
             <TitleContainer>
                 <Title1 href="#coding" onMouseOver={codeHover} whileHover={{ scale: 1.1, x: 0, color: "#89CFF0" }} transition={{ type: "spring", stiffness: 400, damping: 50 }}>CODE</Title1>
                 <Title1> - </Title1>
-                <Title2 onmouseover="bigImg(this)" whileHover={{ scale: 1.1, x: 25, color: "#FFA500" }} transition={{ type: "spring", stiffness: 400, damping: 50 }}>PHOTOGRAPHY</Title2>
+                <Title2 href="#photo" onmouseover="bigImg(this)" whileHover={{ scale: 1.1, x: 25, color: "#FFA500" }} transition={{ type: "spring", stiffness: 400, damping: 50 }}>PHOTOGRAPHY</Title2>
             </TitleContainer>
             <ScrollButton/>
         </HeroContainer>

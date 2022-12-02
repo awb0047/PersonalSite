@@ -11,7 +11,7 @@ const Colors = {
 export const CodingContainer = styled.div`
     width: 100%;
     height: auto;
-    background: #E9ECEF;
+    background: rgb(236, 236, 236);
     display: flex;
     flex-direction: column;
     align-items: center;

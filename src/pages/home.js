@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBar, Hero, About, Coding, Photography } from '../components'
+import { NavBar, Hero, About, Coding, Photography, Mogul } from '../components'
 
 export function HomePage( props ) {
     return (

@@ -16,6 +16,7 @@ export const CodingContainer = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding-bottom: 0vh;
 `
 
 export const InnerLanguages = styled.div`
@@ -65,11 +66,19 @@ export const Language = styled.div`
     width: 250px;
     height: 250px;
     margin: 25px;
+
+    @media screen and (max-width: 700px){
+        width: 30%;
+        height: 30%;
+    }
 `
 
 export const LanguageImg = styled.img`
     width: 246px;
     height: 246px;
+
+    width: 100%;
+    height: 100%;
 `
 export const WorksContainer = styled.div`
     width: 100%;
@@ -85,6 +94,10 @@ export const CardContainer = styled.a`
     display: inline-block;
     width: 50%;
     height: 500px;
+
+    @media screen and (max-width: 700px){
+        height: 70vw;
+    }
 `
 
 export const ShadowContainer = styled.div`
@@ -94,6 +107,10 @@ export const ShadowContainer = styled.div`
     margin-top: 0px;
     margin-left: 0px;
     background: #181818;
+
+    @media screen and (max-width: 700px){
+        height: 100%;
+    }
 `
 
 export const PictureContainer = styled.div`
@@ -105,6 +122,10 @@ export const PictureContainer = styled.div`
     transition: 0.3s;
     background-size: cover;
     background-position: center;
+
+    @media screen and (max-width: 700px){
+        height: 100%;
+    }
 `
 
 export const PictureMask = styled.div`
@@ -136,6 +157,13 @@ export const TextCardContainer = styled.div`
     padding-left: 50px;
     padding-right: 20px;
     vertical-align:top;
+
+    @media screen and (max-width: 700px){
+        height: 70vw;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 10px;
+    }
 `
 
 export const TextCardTitle = styled.h1`
@@ -143,6 +171,10 @@ export const TextCardTitle = styled.h1`
     font-weight: bold;
     color: #181818;
     font-size: 60px;
+
+    @media screen and (max-width: 700px){
+        font-size: 5vw;
+    }
 `
 
 export const TextCardText = styled.h2`
@@ -152,4 +184,8 @@ export const TextCardText = styled.h2`
     font-size: 21px;
     margin-top: 30px;
     line-height: 1.5;
+
+    @media screen and (max-width: 700px){
+        font-size: 3vw;
+    }
 `

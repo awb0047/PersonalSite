@@ -13,7 +13,7 @@ export const NavContainer = styled.div`
     height: 100px;
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     z-index: 5;
 `
 
@@ -30,9 +30,13 @@ export const InnerNav = styled.div`
 `
 
 export const Logo = styled.img`
-    height: 80%;
+    height: 70%;
     margin-right: auto;
     margin-left: 30px;
+
+    @media (max-width: 600px) {
+        height: 12vw;
+    }
 `
 
 export const LinksContainer = styled.div`
@@ -62,8 +66,8 @@ export const NavLink = styled.a`
 `
 
 export const Hamburger = styled.div`
-    width: 50px;
-    height: 50px;
+    width: auto;
+    height: auto;
     margin-right: 30px;
     display: none;
 

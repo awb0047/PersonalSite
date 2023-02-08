@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style bx:fonts="League Spartan">@import url(https://fonts.googleapis.com/css2?family=League+Spartan%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&amp;display=swap);</style>
+  </defs>
+  <text style="fill: rgb(255, 255, 255); font-family: &quot;League Spartan&quot;; font-size: 100px; font-weight: 700; letter-spacing: -2.1px; text-anchor: middle; white-space: pre;" transform="matrix(1, 0, 0, 1, 82.377045, 19.672132)"><tspan x="157.787" y="101.23">Addison</tspan><tspan x="157.787" dy="0.85em">​</tspan><tspan>Barrow</tspan></text>
+</svg>

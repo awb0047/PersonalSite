@@ -30,6 +30,11 @@ export const InnerAboutContainer = styled.div`
     margin-bottom: 150px;
     padding: 50px;
     text-align: center;
+
+    @media screen and (max-width: 1100px){
+        width: 90%;
+        padding: 25px;
+    }
 `
 
 export const Line = styled.div`
@@ -52,6 +57,10 @@ export const Title = styled.h1`
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+
+    @media screen and (max-width: 550px){
+        font-size: 7vw;
+    }
 `
 
 export const Dot = styled(motion.div)`
@@ -59,6 +68,11 @@ export const Dot = styled(motion.div)`
     height: 15px;
     background: white;
     margin: 30px 0px 20px 20px;
+
+    @media screen and (max-width: 550px){
+        width: 10px;
+        height: 10px;
+    }
 `
 
 export const Description = styled.p`
@@ -66,4 +80,8 @@ export const Description = styled.p`
     font-weight: regular;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+
+    @media screen and (max-width: 700px){
+        font-size: 7vw;
+    }
 `

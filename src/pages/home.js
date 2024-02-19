@@ -1,14 +1,11 @@
 import React from "react";
-import { NavBar, Hero, About, Coding, Photography, Mogul } from '../components'
+import { Title, Work } from '../components'
 
 export function HomePage( props ) {
     return (
-        <div style={{background:"#FFFFFF",width:"100vw",height:"100vh"}}>
-            <NavBar/>
-            <Hero/>
-            <About/>
-            <Coding/>
-            <Photography/>
+        <div style={{width:"100vw",height:"100vh"}}>
+            <Title/>
+            <Work/>
         </div>
     )
 }

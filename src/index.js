@@ -5,14 +5,30 @@ import { App } from './components';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react'
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyles = createGlobalStyle`
+  html {
+    --background: #f2f0ec;
+    --text-primary: #004C00;
+  }
+
+  [data-theme='dark'] {
+    --background: black;
+    --text-primary: white;
+  }
+`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ChakraProvider>
-    <Router>
-      <App />
-    </Router>
-  </ChakraProvider>
+  <>
+    <GlobalStyles/>
+    <ChakraProvider>
+      <Router>
+       <App />
+      </Router>
+    </ChakraProvider>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

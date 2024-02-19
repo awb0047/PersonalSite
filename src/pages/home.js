@@ -3,7 +3,7 @@ import { Title, Work } from '../components'
 
 export function HomePage( props ) {
     return (
-        <div style={{width:"100vw",height:"100vh"}}>
+        <div style={{width:"100vw",height:"100%"}}>
             <Title/>
             <Work/>
         </div>

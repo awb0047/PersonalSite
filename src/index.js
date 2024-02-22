@@ -9,14 +9,25 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   html {
+    //colors
     --background: #f2f0ec;
-    --text-primary: #004C00;
+    --title-primary: #004C00;
+    --text-primary: #181818;
+    --text-secondary: #7f7f7f;
+    --navbar: rgba(248,247,243,0.97);
+
+    //fonts
+    --title-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    --primary-font: Arial, Helvetica, sans-serif;
   }
 
   [data-theme='dark'] {
-    --background: black;
+    --background: #282b30;
+    --title-primary: white;
     --text-primary: white;
-  }
+    --text-secondary: white;
+    --navbar: rgba(24,24,24,0.9);
+}
 `;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

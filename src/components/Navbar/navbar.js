@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavContainer, NavInner, LinksContainer, NavLink, Selected } from './navbarStyle'
 import { useToast } from '@chakra-ui/react'
-import { Switch } from '../Small Components/Switch/switch'
+import { Switch } from '../Small Components/switch'
 
 export function NavBar( {
     theme, setTheme

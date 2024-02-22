@@ -19,7 +19,7 @@ export const InnerContainer = styled.div`
 export const MainTitle = styled(motion.h1)`
     font-size: 200px;
     font-weight: bold;
-    color: var(--text-primary);
+    color: var(--title-primary);
     margin: 0;
     line-height: 200px;
     padding: 80px 10px;
@@ -27,6 +27,6 @@ export const MainTitle = styled(motion.h1)`
 
 export const SubTitle = styled(motion.h2)`
     font-size: 22px;
-    color: var(--text-primary);
+    color: var(--title-primary);
     padding: 60px 400px;
 `

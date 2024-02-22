@@ -25,7 +25,7 @@ export const NavInner = styled.div`
     z-index: 50;
 
     .Scrolled {
-        background: rgba(248,247,243,0.97);
+        background: var(--navbar);
     }
 `
 
@@ -59,7 +59,7 @@ export const NavLink = styled(Link)`
 
     font-size: 17px;
     font-weight: bold;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     margin: 0 30px;
     text-decoration: none;
     z-index: 5;

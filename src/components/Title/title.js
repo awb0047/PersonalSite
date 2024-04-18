@@ -3,7 +3,7 @@ import { TitleContainer, InnerContainer, MainTitle, SubTitle } from "./titleStyl
 import { motion } from 'framer-motion';
 
 export function Title( {
-    props
+    props, main, sub
 } ) {
     return (
         <TitleContainer>
@@ -13,14 +13,14 @@ export function Title( {
               animate={{ opacity: 1, y: 0 }}
               transition={{duration: 0.3}}
             >
-              Hi. I'm Addison. Full-Stack Dev.
+              {main}
             </MainTitle>
             <SubTitle
               initial={{ opacity: 0, y: -30}}
               animate={{ opacity: 1, y: 0 }}
               transition={{duration: 0.3, delay: 0.1}}
             >
-              Whatever web application you can dream of. I can build it
+              {sub}
             </SubTitle>
           </InnerContainer>
         </TitleContainer>

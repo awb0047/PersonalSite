@@ -11,6 +11,7 @@ export const WorkContainer = styled.div`
 export const InnerWorkContainer = styled(motion.div)`
     width: 50%;
     height: 100%;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

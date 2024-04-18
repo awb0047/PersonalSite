@@ -89,11 +89,11 @@ export function TextCard( {
                 <Links>
                     <Link href={GitLink}>
                         <LinkText>GitHub</LinkText>
-                        <LinkLogo style={{ backgroundImage: "url(github-mark.png)"}}/>
+                        <LinkLogo style={{ backgroundImage: "url(images/github-mark.png)"}}/>
                     </Link>
                     <Link href={DemoLink}>
                         <LinkText>Demo</LinkText>
-                        <LinkLogo style={{ backgroundImage: "url(link.png)"}}/>
+                        <LinkLogo style={{ backgroundImage: "url(images/link.png)"}}/>
                     </Link>
                 </Links>
             </InnerContainer>

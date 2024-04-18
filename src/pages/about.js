@@ -1,10 +1,11 @@
 import React from "react";
-import { Title } from '../components'
+import { Title, About } from '../components'
 
 export function AboutPage( props ) {
     return (
         <div style={{width:"100vw",height:"100%"}}>
-            <Title/>
+            <Title main={"I'm Addison!"} sub={""}/>
+            <About/>
         </div>
     )
 }

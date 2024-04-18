@@ -8,6 +8,8 @@ export const TitleContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    height: auto;
+    padding-top: 100px;
 `
 
 export const InnerContainer = styled.div`

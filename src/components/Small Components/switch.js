@@ -10,6 +10,7 @@ export const SwitchContainer = styled.div`
     justify-content: flex-start;
     border-radius: 50px;
     padding: 3px;
+    margin: 0 auto 0 0;
     cursor: pointer;
 
     &[data-isOn="true"] {

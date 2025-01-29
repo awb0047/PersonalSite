@@ -3,33 +3,33 @@ import { motion } from 'framer-motion';
 
 export const TitleContainer = styled.div`
     width: 100%;
-    height: 35vw;
+    height: auto;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
     padding-top: 100px;
 `
 
 export const InnerContainer = styled.div`
-    width: 60%;
+    width: 90%;
     height: 80%;
     text-align: center;
 `
 
 export const MainTitle = styled(motion.h1)`
-    font-size: 200px;
+    font-size: min(8vw, 200px);
     font-weight: bold;
     color: var(--title-primary);
     margin: 0;
-    line-height: 200px;
-    padding: 80px 10px;
+    line-height: min(8vw, 200px);
+    padding: min(5vw, 80px) 15%;
 `
 
 export const SubTitle = styled(motion.h2)`
     font-size: 22px;
-    font-weight: bold;
+    font-weight: lighter;
     color: var(--title-primary);
-    padding: 60px 400px;
+    padding: min(1vw, 60px) 20px;
+    word-wrap: break-word;
 `

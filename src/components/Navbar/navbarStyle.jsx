@@ -31,7 +31,7 @@ export const NavInner = styled.div`
 
 export const LinksContainer = styled.div`
     position: absolute;
-    width: auto;
+    width: min(90%, 500px);
     height: 60%;
     display: flex;
     justify-content: center;
@@ -40,7 +40,7 @@ export const LinksContainer = styled.div`
     transition: 0.3s;
 
     @media (max-width: 900px) {
-        display: none;
+        width: 90vw;
     }
 `
 
@@ -60,100 +60,25 @@ export const NavLink = styled(Link)`
     font-size: 17px;
     font-weight: bold;
     color: var(--text-secondary);
-    margin: 0 30px;
+    margin: 0 auto;
     text-decoration: none;
     z-index: 5;
 
     &:nth-child(1).Active ~ ${Selected}{
-        transform: translateX(calc(80px * 0));
-        width: 85px;
+        left: 1.5%;
+        //transform: translateX(calc(80px * 0));
+        width: 18%;
     }
 
     &:nth-child(2).Active ~ ${Selected}{
-        transform: translateX(calc(109px * 1));
-        width: 85px;
+        left: 22%;
+        //transform: translateX(calc(109px * 1));
+        width: 18%;
     }
 
     &:nth-child(3).Active ~ ${Selected}{
-        transform: translateX(calc(110px * 2));
-        width: 65px;
+        left: 43%;
+        //transform: translateX(calc(110px * 2));
+        width: calc(14%);
     }
 `
-//          OLD NAV BAR         //
-//
-// export const NavContainer = styled.div`
-//     width: 100%;
-//     height: 100px;
-//     display: flex;
-//     justify-content: center;
-//     position: absolute;
-//     z-index: 5;
-// `
-
-// export const InnerNav = styled.div`
-//     width: 1800px;
-//     height: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     @media (max-width: 1800px) {
-//         width: 100%;
-//     }
-// `
-
-// export const Logo = styled.img`
-//     height: 70%;
-//     margin-right: auto;
-//     margin-left: 30px;
-
-//     @media (max-width: 600px) {
-//         height: 12vw;
-//     }
-// `
-
-// export const LinksContainer = styled.div`
-//     width: auto;
-//     height: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin-left: auto;
-//     margin-right: 50px;
-
-//     @media (max-width: 900px) {
-//         display: none;
-//     }
-// `
-
-// export const NavLink = styled.a`
-//     font-size: 15px;
-//     font-weight: lighter;
-//     color: white;
-//     margin: 0 20px;
-//     text-decoration: none;
-
-//     @media (max-width: 900px) {
-//         margin-bottom: 30px;
-//     }
-// `
-
-// export const Hamburger = styled.div`
-//     width: auto;
-//     height: auto;
-//     margin-right: 30px;
-//     display: none;
-
-//     @media (max-width: 900px) {
-//         display: block;
-//     }
-// `
-
-// export const LinksContainerMenu = styled.div`
-//     width: auto;
-//     height: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-// `

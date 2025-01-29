@@ -57,7 +57,7 @@ export function NavBar( {
                     <NavLink
                             onClick={() => contactClick()}>
                             Contact
-                        </NavLink>
+                    </NavLink>
                     <Selected/>
                     <Switch isOn={theme} setIsOn={setTheme}/>
                 </LinksContainer>

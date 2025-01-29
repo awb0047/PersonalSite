@@ -29,6 +29,7 @@ export const MainTitle = styled(motion.h1)`
 
 export const SubTitle = styled(motion.h2)`
     font-size: 22px;
+    font-weight: bold;
     color: var(--title-primary);
     padding: 60px 400px;
 `

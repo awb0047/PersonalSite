@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { AppContainer } from './AppStyle'
 import { HomePage } from '../../pages/home'
 import { AboutPage } from '../../pages/about'
+import { FaqPage } from '../../pages/faq'
 import { Routes, Route} from 'react-router-dom';
 import { NavBar } from '../../components'
 
@@ -27,6 +28,7 @@ export const App = () => {
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/about' element={<AboutPage/>}/>
+        <Route path='/faq' element={<FaqPage/>}/>
       </Routes>
     </AppContainer>
   );

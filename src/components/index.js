@@ -4,6 +4,7 @@ export * from './Title/title'
 export * from './Work/work'
 export * from './About/about'
 export * from './Frq/frq'
+export * from './Footer/footer'
 
 // export * from './OLD/App/App'
 // export * from './OLD/Hero/hero'

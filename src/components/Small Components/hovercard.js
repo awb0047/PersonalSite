@@ -6,32 +6,32 @@ export const CardContainer = styled.a`
     position: relative;
     display: inline-block;
     width: 55%;
-    height: 500px;
+    height: min(50vw, 500px);
     margin-bottom: 70px;
 
-    @media screen and (max-width: 700px){
+    /* @media screen and (max-width: 700px){
         height: 70vw;
-    }
+    } */
 `
 
 export const ShadowContainer = styled.div`
     position: absolute;
     width: 100%;
-    height: 450px;
+    height: 90%;
     margin-top: 0px;
     margin-left: 0px;
     background: #181818;
     border-radius: 34px;
 
-    @media screen and (max-width: 700px){
+    /* @media screen and (max-width: 700px){
         height: 100%;
-    }
+    } */
 `
 
 export const PictureContainer = styled.div`
     position: absolute;
     width: 100%;
-    height: 450px;
+    height: 90%;
     margin-top: 0px;
     margin-left: 0px;
     transition: 0.3s;
@@ -39,9 +39,9 @@ export const PictureContainer = styled.div`
     background-position: center;
     border-radius: 30px;
 
-    @media screen and (max-width: 700px){
+    /* @media screen and (max-width: 700px){
         height: 100%;
-    }
+    } */
 `
 
 export const PictureMask = styled.div`

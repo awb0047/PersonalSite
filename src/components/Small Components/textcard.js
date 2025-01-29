@@ -4,47 +4,38 @@ export const TextCardContainer = styled.div`
     display: flex;
     justify-content: center;
     width: 45%;
-    height: 500px;
-    padding-bottom: 50px;
+    height: min(50vw, 500px);
 `
 
 export const InnerContainer = styled.div`
     width: 60%;
-    height: 100%;
+    height: 90%;
     text-align: center;
     position: relative;
-    padding-top: 30px;
+    padding-top: min(2vw, 30px);
 `
 
 export const TextCardTitle = styled.h1`
     font-family: var(--primary-font);
     font-weight: bolder;
     color: var(--text-primary);
-    font-size: 20px;
-
-    @media screen and (max-width: 700px){
-        font-size: 5vw;
-    }
+    font-size: min(3vw, 20px);
 `
 
 export const TextCardText = styled.h2`
     font-family: var(--primary-font);
     font-weight: 600;
     color: var(--text-secondary);
-    font-size: 20px;
-    margin-top: 30px;
+    font-size: min(2vw, 20px);
+    margin-top: min(2vw, 30px);
     line-height: 1.5;
-
-    @media screen and (max-width: 700px){
-        font-size: 3vw;
-    }
 `
 
 export const Links = styled.div`
     width: 95%;
     height: 50px;
     position: absolute;
-    bottom: 30px;
+    bottom: min(1.5vw, 30px);
     left: 50%;
     transform: translateX(-50%);
 
@@ -65,7 +56,7 @@ export const LinkText = styled.div`
     font-family: var(--primary-font);
     font-weight: bold;
     color: var(--text-primary);
-    font-size: 20px;
+    font-size: min(2vw, 20px);;
 `
 
 export const LinkLogo = styled.div`

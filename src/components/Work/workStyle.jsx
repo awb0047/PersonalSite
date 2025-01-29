@@ -10,6 +10,7 @@ export const WorkContainer = styled.div`
 
 export const InnerWorkContainer = styled(motion.div)`
     width: 50%;
+    width: min(90vw, 1280px);
     height: 100%;
     padding-top: 100px;
     display: flex;

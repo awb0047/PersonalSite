@@ -4,7 +4,7 @@ import { HomePage } from '../../pages/home'
 import { AboutPage } from '../../pages/about'
 import { FaqPage } from '../../pages/faq'
 import { Routes, Route} from 'react-router-dom';
-import { NavBar } from '../../components'
+import { NavBar, Footer } from '../../components'
 
 export const App = () => {
 
@@ -30,6 +30,7 @@ export const App = () => {
         <Route path='/about' element={<AboutPage/>}/>
         <Route path='/faq' element={<FaqPage/>}/>
       </Routes>
+      <Footer/>
     </AppContainer>
   );
 };

@@ -10,7 +10,7 @@ export const AboutContainer = styled.div`
 `
 
 export const InnerAboutContainer = styled(motion.div)`
-    width: 50%;
+    width: min(90vw, 1280px);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -22,34 +22,33 @@ export const PictureContainer = styled(motion.div)`
     height: 100%;
     display: flex;
     justify-content: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0px 10px;
 `
 
 export const Picture = styled(motion.img)`
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-    height: 500px;
+    height: min(50vw, 500px);
 `
 
 export const AboutTextContainer = styled(motion.div)`
     width: 50%;
-    height: 100%;
+    height: min(50vw, 500px);
     display: flex;
     flex-direction: column;
     align-items: center;
 `
 
 export const AboutMain = styled(motion.h1)`
-    font-size: 50px;
+    font-size: min(3vw, 50px);
     font-weight: bold;
-    line-height: 70px;
+    line-height: min(4vw, 70px);
     color: var(--title-primary);
 `
 
 export const AboutSub = styled(motion.h2)`
     padding-top: 50px;
-    font-size: 22px;
+    font-size: min(2vw, 22px);
     color: var(--title-primary);
 `
 
@@ -60,7 +59,7 @@ export const LanguagesTitle = styled.div`
     height: 100px;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: min(5vw, 100px);
 `
 
 export const LanguageContainer = styled.div`
@@ -71,14 +70,11 @@ export const LanguageContainer = styled.div`
 
 export const Language = styled.div`
     display: inline-block;
-    width: 250px;
-    height: 250px;
-    margin: 25px;
+    width: min(15vw, 250px);
+    height: min(15vw, 250px);
+    margin: min(5vw, 25px);
 `
 export const LanguageImg = styled.img`
-    width: 246px;
-    height: 246px;
-
     width: 100%;
     height: 100%;
 `

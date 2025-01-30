@@ -14,7 +14,7 @@ export function Footer( {
                     <Link href={"https://www.linkedin.com/in/addisonbarrow/"}>
                         <LinkLogo style={{ backgroundImage: "url(images/linkedin.png)"}}/>
                     </Link>
-                    <Link href={"https://www.amazon.com/"}>
+                    <Link href={"https://x.com/addisonwbarrow"}>
                         <LinkLogo style={{ backgroundImage: "url(images/x.png)"}}/>
                     </Link>
                 </LinksContainer>

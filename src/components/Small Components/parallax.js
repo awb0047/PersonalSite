@@ -4,8 +4,8 @@ import React, { useRef, useEffect } from "react";
 
 export const ParallaxContainer = styled.div`
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     top: 0;
     overflow: hidden;
     z-index: 0;
@@ -69,7 +69,7 @@ export function Parallax( {
                     src="images/one.png" data-value="-8" style={{ left: "calc(80% + 70px)", top: "200px"}}
                 />
                 <ParalaxImage
-                    src="images/one.png" data-value="-6" style={{ left: "calc(100px + 3%)", top: "23%"}}
+                    src="images/one.png" data-value="-6" style={{ left: "calc(100px + 3%)", top: "70%"}}
                 />
 
                 <ParalaxImage
@@ -79,7 +79,7 @@ export function Parallax( {
                     src="images/zero.png" data-value="-8" style={{ left: "100px", top: "100px"}}
                 />
                 <ParalaxImage
-                    src="images/zero.png" data-value="4" style={{ right: "80px", top: "20%"}}
+                    src="images/zero.png" data-value="4" style={{ right: "80px", top: "60%"}}
                 />
             </InnerImages>
         </ParallaxContainer>

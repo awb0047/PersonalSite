@@ -12,9 +12,9 @@ export function Work( {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{duration: 0.3, delay: 0.2}}>
                 <Hovercard backgroundImage={"images/comet.png"} link = "https://www.cometproxies.com/" text = "Comet Proxies"/>
-                <TextCard Title={"COMET PROXIES"} Text={"Full Stack application comprised of a dynamic dashboard, custom backend API, and database that seemlessly work together. Built using the MERN stack (No longer available)"} GitLink={"https://github.com/awb0047"} DemoLink={"https://www.amazon.com/"}/>
+                <TextCard Title={"COMET PROXIES"} Text={"Full Stack application comprised of a dynamic dashboard, custom backend API, and database that seemlessly work together. Built using the MERN stack (No longer available)"} GitLink={"https://github.com/awb0047/Comet-Proxies"} DemoLink={"https://www.cometproxies.com/"}/>
 
-                <TextCard Title={"PSEUDO"} Text={"Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time."} GitLink={"https://github.com/TrevorAupperle/pseudo"} DemoLink={"https://www.amazon.com/"}/>
+                <TextCard Title={"PSEUDO"} Text={"Full Stack web-app that bridges the gab between LinkedIn and Stack Overflow, allowing employers to connect with great problem solvers"} GitLink={"https://github.com/TrevorAupperle/pseudo"} DemoLink={"https://www.amazon.com/"}/>
                 <Hovercard backgroundImage={"images/pseudo.jpg"} link = "https://github.com/TrevorAupperle/pseudo" text = "Pseudo"/>
 
                 <Hovercard backgroundImage={"images/portfolio.png"} link = "https://www.addisonbarrow.com/" text = "My Website"/>

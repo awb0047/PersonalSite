@@ -52,7 +52,7 @@ export const AboutSub = styled(motion.h2)`
     color: var(--title-primary);
 `
 
-export const LanguagesTitle = styled.div`
+export const LanguagesTitle = styled(motion.div)`
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -62,7 +62,7 @@ export const LanguagesTitle = styled.div`
     margin-top: min(5vw, 100px);
 `
 
-export const LanguageContainer = styled.div`
+export const LanguageContainer = styled(motion.div)`
     width: 90%;
     height: auto;
     text-align: center;

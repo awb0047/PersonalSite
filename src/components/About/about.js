@@ -21,10 +21,16 @@ export function About( {
                         <AboutMain>I am a Software Engineer for Parsons and a Senior in Software Engineering at Auburn University.</AboutMain>
                         <AboutSub>Since I started coding when I was a kid, I've done alot of individual projects and contract work for small buisnesses. I am currently an Intern at Parsons Corporation, and will be entering the field full time summer of 2025</AboutSub>
                 </AboutTextContainer>
-                <LanguagesTitle>
+                <LanguagesTitle
+                    initial={{ opacity: 0, y: -30}}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{duration: 0.3, delay: 0.3}}>
                     <AboutMain>Languages I Have Experience With</AboutMain>
                 </LanguagesTitle>
-                <LanguageContainer>
+                <LanguageContainer
+                    initial={{ opacity: 0, y: -30}}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{duration: 0.3, delay: 0.4}}>
                         <Language><LanguageImg src="images/js.png"/></Language>
                         <Language><LanguageImg src="images/html.png"/></Language>
                         <Language><LanguageImg src="images/css.png"/></Language>

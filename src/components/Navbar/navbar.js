@@ -24,7 +24,7 @@ export function NavBar( {
     const contactClick = () => {
         toast({
             title: 'Try Again Later.',
-            description: "Contact method will be added in the near future.",
+            description: "A Contact method will be added in the near future.",
             status: 'info',
             duration: 3000,
             isClosable: true,

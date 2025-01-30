@@ -5,12 +5,13 @@ export const FrqContainer = styled.div`
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-bottom: 200px;
+    align-items: center;
 `
 
 export const InnerFrqContainer = styled(motion.div)`
-    width: 50%;
+    width: min(90vw, 800px);;
     height: 100%;
     display: flex;
     justify-content: center;

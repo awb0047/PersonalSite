@@ -20,8 +20,11 @@ export function Work( {
                 <Hovercard backgroundImage={"images/portfolio.png"} link = "https://www.addisonbarrow.com/" text = "My Website"/>
                 <TextCard Title={"My Website"} Text={"My Personal Portfolio that has change a a lot over the years, built using react and hosted on Google Firebase"} GitLink={"https://github.com/awb0047/PersonalSite"} DemoLink={"https://www.addisonbarrow.com/"}/>
 
-                <TextCard Title={"LKQ ENTERTAINMENT"} Text={"In the realm of code, logic unfolds like a choreographed dance, where variables and functions perform in a symphony of precision. Programmers craft stories of algorithms, pushing boundaries in the ever-evolving dance of technology."} GitLink={"https://github.com/awb0047"} DemoLink={"https://lkqentertainment.com/"}/>
+                <TextCard Title={"LKQ Party Patrol"} Text={"A Static Website for a local business with some basic functions, completely made from scratch with the exception of utilization of formspree to manage contacting through email."} GitLink={"https://github.com/awb0047"} DemoLink={"https://lkqpartypatrol.web.app/"}/>
+                <Hovercard backgroundImage={"images/partypatrol-ss.png"} link = "https://lkqpartypatrol.web.app/" text = "LKQ Entertainment"/>
+
                 <Hovercard backgroundImage={"images/entertainment.png"} link = "https://lkqentertainment-1a156.web.app/" text = "LKQ Entertainment"/>
+                <TextCard Title={"LKQ ENTERTAINMENT"} Text={"A Static Website for a local business with some basic functions, completely made from scratch with the exception of utilization of formspree to manage contacting through email."} GitLink={"https://github.com/awb0047"} DemoLink={"https://lkqentertainment-1a156.web.app/"}/>
             </InnerWorkContainer>
         </WorkContainer>
     );

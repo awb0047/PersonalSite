@@ -56,25 +56,54 @@ export const LanguagesTitle = styled(motion.div)`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100px;
+    height: auto;
     justify-content: center;
     align-items: center;
-    margin-top: min(5vw, 100px);
+    margin-top: min(6vw, 150px);
+    margin-bottom: min(3vw, 50px);
 `
 
 export const LanguageContainer = styled(motion.div)`
-    width: 90%;
+    width: 100%;
     height: auto;
     text-align: center;
 `
 
 export const Language = styled.div`
     display: inline-block;
-    width: min(15vw, 250px);
-    height: min(15vw, 250px);
-    margin: min(5vw, 25px);
+    width: min(15vw, 150px);
+    height: min(15vw, 150px);
+    margin: min(5vw, 5px);
 `
 export const LanguageImg = styled.img`
     width: 100%;
     height: 100%;
+`
+
+export const TextContainer = styled.div`
+    width: 60%;
+    height: auto;
+    padding-top: min(6vw, 150px);
+`
+
+export const Text = styled.h2`
+    width: 100%;
+    font-size: min(2vw, 22px);
+    color: var(--title-primary);
+    padding: 20px 0px;
+`
+
+export const ImagesContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    margin-top: min(6vw, 150px);
+`
+
+export const Image = styled.img`
+    width: auto;
+    height: 100%;
+    margin: 0px 10px;
+    border-radius: 20px;
 `

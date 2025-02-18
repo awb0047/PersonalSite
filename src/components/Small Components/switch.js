@@ -13,7 +13,7 @@ export const SwitchContainer = styled.div`
     margin: 0 auto 0 0;
     cursor: pointer;
 
-    &[data-isOn="true"] {
+    &[data-ison="true"] {
         justify-content: flex-end;
     }
 `
@@ -24,7 +24,7 @@ export const Handle = styled(motion.div)`
     background-color: white;
     border-radius: 40px;
 
-    &[data-isOn="true"] {
+    &[data-ison="true"] {
         background-color: black;
     }
 `
@@ -35,8 +35,8 @@ export function Switch( {
     const toggleSwitch = () => setIsOn(!isOn);
 
     return (
-        <SwitchContainer data-isOn={isOn} onClick={toggleSwitch}>
-            <Handle data-isOn={isOn} layout transition={{ type: "spring", stiffness: 700, damping: 30 }}/>
+        <SwitchContainer data-ison={isOn} onClick={toggleSwitch}>
+            <Handle data-ison={isOn} layout transition={{ type: "spring", stiffness: 700, damping: 30 }}/>
         </SwitchContainer>
     );
 }

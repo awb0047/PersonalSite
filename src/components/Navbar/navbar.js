@@ -48,6 +48,7 @@ export function NavBar( {
                 <LinksContainer className={`${scrolled ? "Scrolled" : ""}`}>
                     {navItems.map((item, index) => (
                         <NavLink
+                            key={index}
                             to={item.path}
                             onClick={() => handleSelect(index)}
                             className={`${index === activeIndex ? "Active" : ""}`}>

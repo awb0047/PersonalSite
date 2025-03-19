@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { useContext } from "react";
+import { ThemeContext } from "../../components/App/App";
 
 export const TextCardContainer = styled.div`
     display: flex;
@@ -59,7 +61,7 @@ export const LinkText = styled.div`
     font-size: min(2vw, 20px);;
 `
 
-export const LinkLogo = styled.div`
+export const LinkLogo = styled.img`
     width: 30px;
     height: 30px;
     background-size: contain;
@@ -72,6 +74,11 @@ export function TextCard( {
     Title, Text, GitLink, DemoLink
 } ) {
 
+    const theme = useContext(ThemeContext);
+
+    let githubPath = theme === false ? "images/git_dark.png" : "images/git_light.png";
+    let linkPath = theme === false ? "images/link_dark.png" : "images/link_light.png";
+
     return (
         <TextCardContainer>
             <InnerContainer>
@@ -80,11 +87,11 @@ export function TextCard( {
                 <Links>
                     <Link href={GitLink}>
                         <LinkText>GitHub</LinkText>
-                        <LinkLogo style={{ backgroundImage: "url(images/github-mark.png)"}}/>
+                        <LinkLogo src={githubPath}/>
                     </Link>
                     <Link href={DemoLink}>
                         <LinkText>Demo</LinkText>
-                        <LinkLogo style={{ backgroundImage: "url(images/link.png)"}}/>
+                        <LinkLogo src={linkPath}/>
                     </Link>
                 </Links>
             </InnerContainer>

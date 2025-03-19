@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from 'framer-motion';
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useContext } from "react";
+import { ThemeContext } from "../../components/App/App";
 
 export const ParallaxContainer = styled.div`
     position: absolute;
@@ -33,6 +34,11 @@ export function Parallax( {
     props
 } ) {
 
+    const theme = useContext(ThemeContext);
+    
+    let zeroPath = theme === false ? "images/zero_dark.png" : "images/zero_light.png";
+    let onePath = theme === false ? "images/one_dark.png" : "images/one_light.png";
+
     const parent = useRef(null);
 
     useEffect(() => {
@@ -63,23 +69,23 @@ export function Parallax( {
         <ParallaxContainer>
             <InnerImages ref={parent}>
                 <ParalaxImage
-                    src="images/one.png" data-value="-4" style={{ left: `calc(100px + 5%)`, top: "350px"}}
+                    src={zeroPath} data-value="-4" style={{ left: `calc(100px + 5%)`, top: "350px"}}
                 />
                 <ParalaxImage
-                    src="images/one.png" data-value="-8" style={{ left: "calc(80% + 70px)", top: "200px"}}
+                    src={onePath} data-value="-8" style={{ left: "calc(80% + 70px)", top: "200px"}}
                 />
                 <ParalaxImage
-                    src="images/one.png" data-value="-6" style={{ left: "calc(100px + 3%)", top: "70%"}}
+                    src={onePath} data-value="-6" style={{ left: "calc(100px + 3%)", top: "70%"}}
                 />
 
                 <ParalaxImage
-                    src="images/zero.png" data-value="-2" style={{ right: "350px", top: "1030px"}}
+                    src={zeroPath} data-value="-2" style={{ right: "350px", top: "1030px"}}
                 />
                 <ParalaxImage
-                    src="images/zero.png" data-value="-8" style={{ left: "100px", top: "100px"}}
+                    src={zeroPath} data-value="-8" style={{ left: "100px", top: "100px"}}
                 />
                 <ParalaxImage
-                    src="images/zero.png" data-value="4" style={{ right: "80px", top: "60%"}}
+                    src={zeroPath} data-value="4" style={{ right: "80px", top: "60%"}}
                 />
             </InnerImages>
         </ParallaxContainer>

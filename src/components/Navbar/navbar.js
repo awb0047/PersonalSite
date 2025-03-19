@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { NavContainer, NavInner, LinksContainer, NavLink, Selected } from './navbarStyle'
-import { useToast } from '@chakra-ui/react'
+import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody,  ModalCloseButton, useDisclosure, FormControl, FormLabel, Input, Button } from '@chakra-ui/react'
 import { Switch } from '../Small Components/switch'
 
 export function NavBar( {
     theme, setTheme
 } ) {
-    const toast = useToast();
+    const { isOpen, onOpen, onClose } = useDisclosure()
+
+    const initialRef = React.useRef(null)
+    const finalRef = React.useRef(null)
 
     const [activeIndex, setActiveIndex] = useState(0);
     const [scrolled, setScrolled] = useState(false);
@@ -20,16 +23,6 @@ export function NavBar( {
         { text: "About", path: "/about" },
         { text: "FAQ", path: "/faq" }
     ];
-
-    const contactClick = () => {
-        toast({
-            title: 'Try Again Later.',
-            description: "A Contact method will be added in the near future.",
-            status: 'info',
-            duration: 3000,
-            isClosable: true,
-        })
-    }
 
     const navbarScrolled = () => {
         if (window.scrollY >= 100)
@@ -56,9 +49,41 @@ export function NavBar( {
                         </NavLink>
                     ))}
                     <NavLink
-                            onClick={() => contactClick()}>
+                            onClick={onOpen}>
                             Contact
                     </NavLink>
+                    <Modal
+                        initialFocusRef={initialRef}
+                        finalFocusRef={finalRef}
+                        isOpen={isOpen}
+                        onClose={onClose}
+                    >
+                        <ModalOverlay />
+                        <ModalContent>
+                        <ModalHeader>Contact Me!</ModalHeader>
+                        <ModalCloseButton />
+                        <ModalBody pb={6}>
+                            <div>
+                                <FormControl>
+                                <FormLabel>First name</FormLabel>
+                                <Input ref={initialRef} placeholder='First name' />
+                                </FormControl>
+
+                                <FormControl mt={4}>
+                                <FormLabel>Last name</FormLabel>
+                                <Input placeholder='Last name' />
+                                </FormControl>
+                            </div>
+                        </ModalBody>
+
+                        <ModalFooter>
+                            <Button colorScheme='blue' mr={3}>
+                            Save
+                            </Button>
+                            <Button onClick={onClose}>Cancel</Button>
+                        </ModalFooter>
+                        </ModalContent>
+                    </Modal>
                     <Selected/>
                     <Switch isOn={theme} setIsOn={setTheme}/>
                 </LinksContainer>
@@ -66,58 +91,3 @@ export function NavBar( {
         </NavContainer>
     );
 }
-
-//      Old Nav Bar
-//
-// export function NavBar( {
-//     props
-// } ) {
-
-//     const { isOpen, onOpen, onClose } = useDisclosure()
-//     const toast = useToast();
-
-//     const handleClick = () => {
-//         onOpen()
-//     }
-
-//     const contactClick = () => {
-//         toast({
-//             title: 'Try Again Later.',
-//             description: "Contact method will be added in the near future.",
-//             status: 'info',
-//             duration: 3000,
-//             isClosable: true,
-//         })
-//     }
-
-//     return (
-//         <NavContainer>
-//             <InnerNav>
-//                 <Logo src={"image.png"}/>
-//                 <LinksContainer>
-//                     <NavLink href="/">HOME</NavLink>
-//                     <NavLink href="/faq">FAQ</NavLink>
-//                     <NavLink href="/about">ABOUT</NavLink>
-//                     <NavLink onClick={contactClick}>CONTACT</NavLink>
-//                 </LinksContainer>
-//                 <Hamburger>
-//                     <IconButton onClick={() => handleClick()} icon={<HamburgerIcon/>} size="lg"/>
-//                 </Hamburger>
-//                 <Drawer onClose={onClose} isOpen={isOpen} size={"full"}>
-//                     <DrawerOverlay />
-//                     <DrawerContent>
-//                         <DrawerCloseButton />
-//                         <DrawerBody bg="#0D0F11">
-//                             <LinksContainerMenu>
-//                                 <NavLink href="/#home">HOME</NavLink>
-//                                 <NavLink href="/#faq">FAQ</NavLink>
-//                                 <NavLink href="/#">ABOUT</NavLink>
-//                                 <NavLink onClick={contactClick}>CONTACT</NavLink>
-//                             </LinksContainerMenu>
-//                         </DrawerBody>
-//                     </DrawerContent>
-//                 </Drawer>
-//             </InnerNav>
-//         </NavContainer>
-//     );
-// }

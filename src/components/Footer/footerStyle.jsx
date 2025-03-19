@@ -32,7 +32,7 @@ export const Link = styled.a`
     align-items: center;
 `
 
-export const LinkLogo = styled.div`
+export const LinkLogo = styled.img`
     width: 100%;
     height: 100%;
     background-size: contain;

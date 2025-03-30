@@ -85,14 +85,18 @@ export function TextCard( {
                 <TextCardTitle>{Title}</TextCardTitle>
                 <TextCardText>{Text}</TextCardText>
                 <Links>
-                    <Link href={GitLink}>
-                        <LinkText>GitHub</LinkText>
-                        <LinkLogo src={githubPath}/>
-                    </Link>
-                    <Link href={DemoLink}>
-                        <LinkText>Demo</LinkText>
-                        <LinkLogo src={linkPath}/>
-                    </Link>
+                    {GitLink && 
+                        <Link href={GitLink}>
+                            <LinkText>GitHub</LinkText>
+                            <LinkLogo src={githubPath}/>
+                        </Link>
+                    }
+                    {DemoLink && 
+                        <Link href={DemoLink}>
+                            <LinkText>Demo</LinkText>
+                            <LinkLogo src={linkPath}/>
+                        </Link>
+                    }
                 </Links>
             </InnerContainer>
         </TextCardContainer>

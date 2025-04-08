@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutContainer, InnerAboutContainer, PictureContainer, Picture, AboutTextContainer, AboutMain, AboutSub, LanguagesTitle, LanguageContainer, Language, LanguageImg, TextContainer, Text, ImagesContainer, Image } from "./aboutStyle"
+import { AboutContainer, InnerAboutContainer, PictureContainer, Picture, AboutTextContainer, AboutMain, AboutSub, LanguagesTitle, LanguageContainer, Language, LanguageImg, TextContainer, Text, ImagesContainer, ImageContainer, Image } from "./aboutStyle"
 
 export function About( {
     props
@@ -63,8 +63,8 @@ export function About( {
                     <Text>Outside of Programming, I spend most of my freetime backpacking, traveling, playing sports, or learning to cook.</Text>
                 </TextContainer>
                 <ImagesContainer>
-                    <Image src="images/samford.jpg"/>
-                    <Image src="images/rainier.jpg"/>
+                    <ImageContainer><Image src="images/samford.jpg"/></ImageContainer>
+                    <ImageContainer><Image src="images/rainier.jpg"/></ImageContainer>
                 </ImagesContainer>
             </InnerAboutContainer>
         </AboutContainer>

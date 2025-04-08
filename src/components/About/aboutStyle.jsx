@@ -97,13 +97,20 @@ export const ImagesContainer = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 500px;
+    height: min(500px, 40vw);
     margin-top: min(6vw, 150px);
 `
 
-export const Image = styled.img`
+export const ImageContainer = styled.div`
     width: auto;
     height: 100%;
+    overflow: hidden;
+    `
+
+export const Image = styled.img`
+    height: 100%;
+    width: auto;
     margin: 0px 10px;
     border-radius: 20px;
+    object-fit: cover;
 `

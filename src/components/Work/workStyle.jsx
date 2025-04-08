@@ -14,6 +14,13 @@ export const InnerWorkContainer = styled(motion.div)`
     height: 100%;
     padding-top: 100px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+
+    @media (max-width: 480px) {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
 `

@@ -9,9 +9,11 @@ export const CardContainer = styled.a`
     height: min(50vw, 500px);
     margin-bottom: 70px;
 
-    /* @media screen and (max-width: 700px){
-        height: 70vw;
-    } */
+    @media (max-width: 480px) {
+        width: 90%;
+        height: min(70vw, 300px);
+        margin-bottom: 0px;
+    }
 `
 
 export const ShadowContainer = styled.div`

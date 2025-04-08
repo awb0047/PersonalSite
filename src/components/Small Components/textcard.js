@@ -7,6 +7,10 @@ export const TextCardContainer = styled.div`
     justify-content: center;
     width: 45%;
     height: min(50vw, 500px);
+
+    @media (max-width: 480px) {
+        width: 90%;
+    }
 `
 
 export const InnerContainer = styled.div`

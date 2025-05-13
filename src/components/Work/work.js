@@ -11,7 +11,7 @@ export function Work( {
                 initial={{ opacity: 0, y: -30}}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{duration: 0.3, delay: 0.2}}>
-                <Hovercard backgroundImage={"images/comet.png"} link = "https://www.cometproxies.com/" text = "Comet Proxies"/>
+                <Hovercard backgroundImage={"images/comet.png"} link = "https://github.com/awb0047/Comet-Proxies" text = "Comet Proxies"/>
                 <TextCard Title={"COMET PROXIES"} Text={"Full Stack application comprised of a dynamic dashboard, custom backend API, and database that seemlessly work together. Built using the MERN stack (No longer available)"} GitLink={"https://github.com/awb0047/Comet-Proxies"}/>
 
                 <TextCard Title={"PSEUDO"} Text={"Full Stack web-app that bridges the gap between LinkedIn and Stack Overflow, allowing employers to connect with great problem solvers"} GitLink={"https://github.com/TrevorAupperle/pseudo"}/>

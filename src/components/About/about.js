@@ -19,7 +19,7 @@ export function About( {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{duration: 0.3, delay: 0.2}}>
                         <AboutMain>I am a Software Engineer for Parsons and a graduate of Auburn University.</AboutMain>
-                        <AboutSub>Since I started coding when I was a kid, I've done a lot of individual projects and contract work for small buisnesses. I am currently an Intern at Parsons Corporation and will be entering the field full time summer of 2025 in Seattle, Washington.</AboutSub>
+                        <AboutSub>Since I started coding when I was a kid, I've done a lot of individual projects and contract work for small buisnesses. During my time at Auburn, I had the amazing opprotunity to intern at Parsons Corporations. I am now located in Seattle, Washington and am looking for work.</AboutSub>
                 </AboutTextContainer>
                 <LanguagesTitle
                     initial={{ opacity: 0, y: -30}}
